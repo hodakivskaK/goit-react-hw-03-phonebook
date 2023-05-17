@@ -39,7 +39,15 @@ export class App extends Component {
       number,
     };
 
-    if (name.length === 0 || number.length === 0){
+    if (name.length === 0 || number.length === 0) {
+      if (name.lenght === 0) {
+        return alert("The letter in name: ",  name.lenght);
+      }
+
+        if (number.length === 0) {
+        return alert("Number of digits in the number: ",  number.length);
+      }
+
       return alert(`Field is empty`);
     }
 
